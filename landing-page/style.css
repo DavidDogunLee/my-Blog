@@ -1,0 +1,39 @@
+:root {
+  --green: #caf8da;
+}
+
+.container {
+  display: grid;
+  max-width: 1000px;
+  margin: auto;
+  grid-gap: 5px;
+  grid-template-columns: repeat(4, minmax(70px, auto)) minmax(400px, auto);
+  grid-template-rows: 70px repeat(2, minmax(300px, auto)) 50px;
+  background-color: #4444;
+}
+
+.box {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: var(--green);
+}
+
+.item-4 {
+  grid-column: 5;
+  grid-row: 1 / span 3;
+}
+
+.item-5 {
+  grid-column: 1 / span 4;
+  grid-row: 2;
+}
+
+.item-6 {
+  grid-column: 1 / span 4;
+  grid-row: 3;
+}
+
+.item-7 {
+  grid-column: 1 / span 5;
+  grid-row: 4;
+}
